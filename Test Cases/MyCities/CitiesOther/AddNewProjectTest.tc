@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify ability to register new city other  ratings  porject .</description>
+   <name>AddNewProjectTest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>af4ccd99-9163-48b3-9d67-5cf8361f3b94</testCaseGuid>
+</TestCaseEntity>

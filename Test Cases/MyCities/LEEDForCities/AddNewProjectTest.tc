@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify ability to register new  leed city porject.</description>
+   <name>AddNewProjectTest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>476d3c8d-6dad-4cf9-b7c2-5bf22600d16a</testCaseGuid>
+</TestCaseEntity>

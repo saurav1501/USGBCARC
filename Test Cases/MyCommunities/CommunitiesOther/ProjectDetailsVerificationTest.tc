@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify the project id , Address , State , Country ,email , gross_ floor area &amp; Population for the project is displays correctly .</description>
+   <name>ProjectDetailsVerificationTest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ce65fce4-ce86-4c2a-ba8f-424ef78a2dc3</testCaseGuid>
+</TestCaseEntity>

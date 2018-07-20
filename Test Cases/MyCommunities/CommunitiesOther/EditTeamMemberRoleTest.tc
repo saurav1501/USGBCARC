@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Editing the Authorization Level of the Team Member Added</description>
+   <name>EditTeamMemberRoleTest</name>
+   <tag>Add Team Member</tag>
+   <comment></comment>
+   <testCaseGuid>754350a0-4b47-42ca-8d7e-7de209596e3d</testCaseGuid>
+</TestCaseEntity>

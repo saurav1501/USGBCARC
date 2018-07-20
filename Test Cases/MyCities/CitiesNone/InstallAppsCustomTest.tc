@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify if ability to install custom apps for google drive , one drive &amp; drobox .</description>
+   <name>InstallAppsCustomTest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cd661e04-0f3d-4837-9158-2efab3e9785f</testCaseGuid>
+</TestCaseEntity>

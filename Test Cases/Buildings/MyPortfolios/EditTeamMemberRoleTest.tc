@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify if the portfolio have ablility to edit the existing role of the team member which is already added in the portfolio.</description>
+   <name>EditTeamMemberRoleTest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b26708b3-4ecf-4228-af49-a3b9aeeb6b6c</testCaseGuid>
+</TestCaseEntity>
