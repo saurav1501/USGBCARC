@@ -12,7 +12,6 @@ public class ReusableMethodsBasePoint extends BaseClass{
 		WebUI.waitForElementClickable(findTestObject('BasePoint/CityCom/a_ Base Points'), 10)
 		WebUI.doubleClick(findTestObject('BasePoint/CityCom/a_ Base Points'))
 		WebUI.delay(5)
-		WebUI.click(findTestObject('Page_Arc dashboard/sideBar'))
 		WebUI.check(findTestObject('BasePoint/CityCom/Checkbox1'))
 		WebUI.delay(3)
 		for(int count=2;count<=11;count++) {

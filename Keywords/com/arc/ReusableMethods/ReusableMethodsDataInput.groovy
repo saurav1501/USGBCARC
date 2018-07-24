@@ -113,13 +113,17 @@ public class ReusableMethodsDataInput  extends BaseClass{
 		String reading4  = data.getCellData(sheetName, "WaterReading4", rowNum);
 		String reading5  = data.getCellData(sheetName, "WaterReading5", rowNum);
 
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/a_ Data Input'))
+		WebUI.click(findTestObject('Page_Arc dashboard/a_Projects'))
+		WebUI.delay(1)
+
+
+		WebUI.click(findTestObject('DataInput/CityCom/a_ Data Input'))
 		WebUI.click(findTestObject('DataInput/CityCom/span_Water'))
 		WebUI.delay(3)
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/button_Add Year'))
+		WebUI.click(findTestObject('DataInput/CityCom/button_Add Year'))
 		WebUI.delay(3)
 
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/button_Next Year'))
+		WebUI.click(findTestObject('DataInput/CityCom/button_Next Year'))
 		WebUI.delay(1)
 		WebUI.click(findTestObject('DataInput/CityCom/button_Previous Year'))
 		WebUI.click(findTestObject('DataInput/CityCom/button_Previous Year'))
@@ -157,13 +161,17 @@ public class ReusableMethodsDataInput  extends BaseClass{
 		String reading4  = data.getCellData(sheetName, "wastegeneration4", rowNum);
 		String reading5  = data.getCellData(sheetName, "wastegeneration5", rowNum);
 
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/a_ Data Input'))
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/span_Waste'))
+
+		WebUI.click(findTestObject('Page_Arc dashboard/a_Projects'))
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('DataInput/CityCom/a_ Data Input'))
+		WebUI.click(findTestObject('DataInput/CityCom/span_Waste'))
 		WebUI.delay(3)
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/GwAddYear'))
+		WebUI.click(findTestObject('DataInput/CityCom/GwAddYear'))
 		WebUI.delay(3)
 
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/button_Next Year'))
+		WebUI.click(findTestObject('DataInput/CityCom/button_Next Year'))
 		WebUI.delay(2)
 		WebUI.click(findTestObject('DataInput/CityCom/button_Previous Year'))
 		WebUI.click(findTestObject('DataInput/CityCom/button_Previous Year'))
@@ -198,12 +206,15 @@ public class ReusableMethodsDataInput  extends BaseClass{
 		String reading4  = data.getCellData(sheetName, "wastediversion4", rowNum)
 		String reading5  = data.getCellData(sheetName, "wastediversion5", rowNum)
 
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/a_ Data Input'))
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/span_Waste'))
+		WebUI.click(findTestObject('Page_Arc dashboard/a_Projects'))
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('DataInput/CityCom/a_ Data Input'))
+		WebUI.click(findTestObject('DataInput/CityCom/span_Waste'))
 		WebUI.delay(3)
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/DwAddYear'))
+		WebUI.click(findTestObject('DataInput/CityCom/DwAddYear'))
 		WebUI.delay(3)
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/DPreviousYear'))
+		WebUI.click(findTestObject('DataInput/CityCom/DPreviousYear'))
 		WebUI.delay(3)
 		WebUI.click(findTestObject('DataInput/CityCom/DPreviousYear'))
 		WebUI.click(findTestObject('DataInput/CityCom/DPreviousYear'))
@@ -232,13 +243,16 @@ public class ReusableMethodsDataInput  extends BaseClass{
 		String reading4  = data.getCellData(sheetName, "TReading4", rowNum)
 		String reading5  = data.getCellData(sheetName, "TReading5", rowNum)
 
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/a_ Data Input'))
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/span_Transportation'))
+		WebUI.click(findTestObject('Page_Arc dashboard/a_Projects'))
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('DataInput/CityCom/a_ Data Input'))
+		WebUI.click(findTestObject('DataInput/CityCom/span_Transportation'))
 		WebUI.delay(3)
 
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/button_Add Year'))
+		WebUI.click(findTestObject('DataInput/CityCom/button_Add Year'))
 		WebUI.delay(3)
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/button_Next Year'))
+		WebUI.click(findTestObject('DataInput/CityCom/button_Next Year'))
 		WebUI.delay(2)
 		WebUI.click(findTestObject('DataInput/CityCom/button_Previous Year'))
 		WebUI.click(findTestObject('DataInput/CityCom/button_Previous Year'))
@@ -273,36 +287,39 @@ public class ReusableMethodsDataInput  extends BaseClass{
 		String reading5  = data.getCellData(sheetName, "Hincome1", rowNum)
 		String reading6  = data.getCellData(sheetName, "Hincome2", rowNum)
 
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/a_ Data Input'))
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/span_Human Experience'))
+		WebUI.click(findTestObject('Page_Arc dashboard/a_Projects'))
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('DataInput/CityCom/a_ Data Input'))
+		WebUI.click(findTestObject('DataInput/CityCom/span_Human Experience'))
 		WebUI.delay(5)
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/EducationAddYear'))
+		WebUI.click(findTestObject('DataInput/CityCom/EducationAddYear'))
 		WebUI.delay(3)
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/EducationAddPrevYear'))
+		WebUI.click(findTestObject('DataInput/CityCom/EducationAddPrevYear'))
 		WebUI.delay(3)
 		WebUI.setText(findTestObject('DataInput/CityCom/TextboxValue1'), reading1)
 		WebUI.setText(findTestObject('DataInput/CityCom/TextboxValue2'), reading2)
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/BachelorAddYear'))
+		WebUI.click(findTestObject('DataInput/CityCom/BachelorAddYear'))
 		WebUI.delay(3)
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/BachelorAddPrevYear'))
+		WebUI.click(findTestObject('DataInput/CityCom/BachelorAddPrevYear'))
 		WebUI.delay(3)
 		WebUI.sendKeys(findTestObject('DataInput/CityCom/HTextboxValue3'), reading1)
 		WebUI.sendKeys(findTestObject('DataInput/CityCom/HTextboxValue4'), reading2)
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/EquAddYear'))
+		WebUI.click(findTestObject('DataInput/CityCom/EquAddYear'))
 		WebUI.delay(3)
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/EquAddPrevYear'))
+		WebUI.click(findTestObject('DataInput/CityCom/EquAddPrevYear'))
 		WebUI.delay(3)
 		WebUI.sendKeys(findTestObject('DataInput/CityCom/HTextboxValue5'), reading1)
 		WebUI.sendKeys(findTestObject('DataInput/CityCom/HTextboxValue6'), reading2)
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/GiniAddYear'))
+		WebUI.click(findTestObject('DataInput/CityCom/GiniAddYear'))
 		WebUI.delay(3)
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/GiniAddPrevYear'))
+		WebUI.click(findTestObject('DataInput/CityCom/GiniAddPrevYear'))
 		WebUI.delay(3)
 		WebUI.sendKeys(findTestObject('DataInput/CityCom/HTextboxValue7'), reading3)
 		WebUI.sendKeys(findTestObject('DataInput/CityCom/HTextboxValue8'), reading4)
 		WebUI.doubleClick(findTestObject('DataInput/CityCom/ProsperityAddYear'))
 		WebUI.delay(2)
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/ProsperityAddPrevYear'))
+		WebUI.click(findTestObject('DataInput/CityCom/ProsperityAddPrevYear'))
 		WebUI.delay(2)
 		WebUI.sendKeys(findTestObject('DataInput/CityCom/HTextboxValue9'), reading5)
 
@@ -336,8 +353,11 @@ public class ReusableMethodsDataInput  extends BaseClass{
 		String ureading3  = data.getCellData(sheetName, "ADeatailsUnitReading3", rowNum);
 		String ureading4  = data.getCellData(sheetName, "ADeatailsUnitReading4", rowNum);
 
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/a_ Data Input'))
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/span_Additional Data'))
+		WebUI.click(findTestObject('Page_Arc dashboard/a_Projects'))
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('DataInput/CityCom/a_ Data Input'))
+		WebUI.click(findTestObject('DataInput/CityCom/span_Additional Data'))
 		WebUI.delay(4)
 
 		for(int count =1 ;count<=4;count++ ) {
