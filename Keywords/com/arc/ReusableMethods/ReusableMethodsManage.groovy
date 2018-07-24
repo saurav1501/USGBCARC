@@ -1,13 +1,14 @@
 package com.arc.ReusableMethods
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+
 import org.testng.Assert
+
 import com.arc.BaseClass.BaseClass
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import java.text.DateFormat
-import java.text.SimpleDateFormat
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 public class ReusableMethodsManage extends BaseClass {
 	public ReusableMethodsDataInput ReusDataInput = new ReusableMethodsDataInput()
@@ -132,7 +133,7 @@ public class ReusableMethodsManage extends BaseClass {
 
 	@Keyword
 	public void billingStatus(String sheetName, int rowNum){
-
+		WebUI.delay(2)
 		String regdAmt = data.getCellData(sheetName, "Amount", rowNum)
 		String reviewAmt = data.getCellData(sheetName, "ReviewAmount", rowNum)
 
@@ -243,17 +244,17 @@ public class ReusableMethodsManage extends BaseClass {
 
 	@Keyword
 	public void verifyAgreementFileDownload(){
-		
 		WebUI.click(findTestObject('Page_Arc dashboard/a_Projects'))
 		WebUI.delay(1)
+		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/a_ CreditsActions'))
 		WebUI.click(findTestObject('Manage/VerifyAgreementFile/a_ Manage'))
 		WebUI.scrollToElement(findTestObject('Manage/VerifyAgreementFile/a_ Agreements'),2)
 		WebUI.click(findTestObject('Manage/VerifyAgreementFile/a_ Agreements'))
+		WebUI.delay(2)
 		WebUI.click(findTestObject('Manage/VerifyAgreementFile/button_Download'))
-		WebUI.delay(10)
+		WebUI.delay(5)
 		Assert.assertTrue(ReusDataInput.isFileDownloaded('Agreement.pdf'), "Agreement File Didn't downloaded successfully")
 		println "Agreemnent File downloaded and verified successfully"
-
 	}
 
 

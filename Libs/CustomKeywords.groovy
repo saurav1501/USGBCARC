@@ -456,14 +456,6 @@ def static "com.arc.ReusableMethods.ReusableMethodsAddNewProject.parkingAddNewPr
          , 	rowNum)
 }
 
-def static "com.arc.ReusableMethods.ReusableMethodsAddNewProject.PortfolioProjectVerifcation"(
-    	String sheetName	
-     , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsAddNewProject()).PortfolioProjectVerifcation(
-        	sheetName
-         , 	rowNum)
-}
-
 def static "com.helper.mysql.ConnectMySqlRemoteDB.executeQuery"(
     	String queryString	) {
     (new com.helper.mysql.ConnectMySqlRemoteDB()).executeQuery(

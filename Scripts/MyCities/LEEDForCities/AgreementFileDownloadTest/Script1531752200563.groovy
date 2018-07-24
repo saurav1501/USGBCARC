@@ -23,7 +23,7 @@ import org.openqa.selenium.Keys as Keys
 
 try {
 	
-	CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram'(GlobalVariable.CitySheet, GlobalVariable.rowNumTwo)
+    CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram'(GlobalVariable.CitySheet, GlobalVariable.rowNumTwo)
 	CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsManage.verifyAgreementFileDownload'()
  
  } catch (Throwable t) {

@@ -20,7 +20,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 try {
-	CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToCities'()
+	CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToCommunities'() 
 	CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram'(GlobalVariable.CommunitySheet, GlobalVariable.rowNumThree)
 	
 } catch (Throwable t) {

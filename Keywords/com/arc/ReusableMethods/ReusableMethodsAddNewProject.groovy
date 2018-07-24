@@ -80,6 +80,7 @@ public class ReusableMethodsAddNewProject extends BaseClass{
 		String prjCountry 	= data.getCellData(sheetName, "Country", rowNum);
 		String prjState 	= data.getCellData(sheetName, "State", rowNum);
 		String prjZip 		= data.getCellData(sheetName, "Zip", rowNum);
+		
 
 		String ProjectName = prjName + prjRating +formatarDate.format(date)
 		navigation.clickAddProject()
@@ -165,35 +166,5 @@ public class ReusableMethodsAddNewProject extends BaseClass{
 		WebUI.delay(5)
 	}
 
-	@Keyword
-	public void PortfolioProjectVerifcation(String sheetName, int rowNum) throws IOException, InterruptedException {
 
-		/**********Verifying the Project Area, Total Occupancy *************/
-		String projectArea 	        = data.getCellData(sheetName, "Area", 14 );
-		String projectOccupancy 	= data.getCellData(sheetName, "occupancy", 14);
-		String certifiedArea 	= data.getCellData(sheetName, "Area", 15);
-
-		System.out.println(CommonMethod.getText("TotalGrossArea").replaceAll("[,sf]","").trim());
-		System.out.println(projectArea);
-		Assert.assertTrue(projectArea.contains(CommonMethod.getText("TotalGrossArea").replaceAll("[,sf]","").trim()), "Total Area Didn't Matched");
-		CommonMethod.testlog( "Pass", "Total Gross Floor Area verified Successfully");
-
-
-		System.out.println(CommonMethod.getText("TotalCertifiedArea").replaceAll("[,sf]",""));
-		System.out.println(certifiedArea);
-		Assert.assertTrue(certifiedArea.contains(CommonMethod.getText("TotalCertifiedArea").replaceAll("[,sf]","").trim()), "Total Certified Area Didn't Matched");
-		CommonMethod.testlog( "Pass", "Total Certified Floor Area verified Successfully");
-
-		/******** Verify Total Occupant ********/
-
-		Assert.assertTrue(projectOccupancy.contains(CommonMethod.getText("TotalOccupant").replaceAll("[,sf]","").trim()), "Total Occupancy Didn't Matched");
-		CommonMethod.testlog( "Pass", "Total Occupancy Verified Successfully");
-
-		/********** Verify Total Project ************/
-
-		CommonMethod.assertcontainsmessage("TotalProject", "10", " Total Project Not Matched ");
-		CommonMethod.testlog( "Pass", "Total Project Count Verified Successfully");
-
-		CommonMethod.testlog( "Pass", "Portfolio Projects Details Verified  Successfully");
-	}
 }

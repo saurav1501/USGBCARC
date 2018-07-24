@@ -64,19 +64,22 @@ public class ReusableMethodsDataInput  extends BaseClass{
 
 	@Keyword
 	public void createEnergyMeterReading(String sheetName, int rowNum) throws IOException, InterruptedException{
+
 		String reading1  = data.getCellData(sheetName, "EReading1", rowNum)
 		String reading2  = data.getCellData(sheetName, "EReading2", rowNum)
 		String reading3  = data.getCellData(sheetName, "EReading3", rowNum)
 		String reading4  = data.getCellData(sheetName, "EReading4", rowNum)
 		String reading5  = data.getCellData(sheetName, "EReading5", rowNum)
 
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/a_ Data Input'))
+		WebUI.click(findTestObject('Page_Arc dashboard/a_Projects'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('DataInput/CityCom/a_ Data Input'))
 		WebUI.click(findTestObject('DataInput/CityCom/span_Energy'))
 		WebUI.delay(3)
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/button_Add Year'))
+		WebUI.click(findTestObject('DataInput/CityCom/button_Add Year'))
 		WebUI.delay(3)
 
-		WebUI.doubleClick(findTestObject('DataInput/CityCom/button_Next Year'))
+		WebUI.click(findTestObject('DataInput/CityCom/button_Next Year'))
 		WebUI.delay(3)
 		WebUI.click(findTestObject('DataInput/CityCom/button_Previous Year'))
 		WebUI.click(findTestObject('DataInput/CityCom/button_Previous Year'))
