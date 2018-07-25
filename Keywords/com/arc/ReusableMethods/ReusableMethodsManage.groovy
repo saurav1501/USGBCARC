@@ -161,7 +161,7 @@ public class ReusableMethodsManage extends BaseClass {
 		Assert.assertEquals(regStatus, "Completed")
 
 		//Review Payment details verification
-
+/*
 		String revieDate= WebUI.getText(findTestObject('Object Repository/Manage/BillingSection/ReviewPaymentDate'))
 		String reviewOrderId= WebUI.getText(findTestObject('Object Repository/Manage/BillingSection/ReviewOrderId'))
 		String reviewAmount= WebUI.getText(findTestObject('Object Repository/Manage/BillingSection/ReviewAmount'))
@@ -170,7 +170,7 @@ public class ReusableMethodsManage extends BaseClass {
 		String revieworderId = data.setCellData(sheetName, "ReviewId", rowNum,reviewOrderId)
 		Assert.assertEquals(revieDate, verifyBillingDate() )
 		//	Assert.assertEquals(reviewAmount, reviewAmt)
-		Assert.assertEquals(reviewStatus, "Completed")
+		Assert.assertEquals(reviewStatus, "Completed")*/
 	}
 
 	@Keyword

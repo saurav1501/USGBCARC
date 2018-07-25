@@ -4,7 +4,7 @@
    <name>USParkingSuite</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-07-24T16:15:22</lastRun>
+   <lastRun>2018-07-25T10:05:55</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>b96ce9be-b67f-4d08-a256-c595f10d24ed</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Buildings/MyParking/LoginWithParkingTest</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -26,7 +26,7 @@
    <testCaseLink>
       <guid>fad0d4a0-9995-4e09-a00d-4e9388a4eb82</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Buildings/MyParking/SearchProgramTest</testCaseId>
    </testCaseLink>
    <testCaseLink>

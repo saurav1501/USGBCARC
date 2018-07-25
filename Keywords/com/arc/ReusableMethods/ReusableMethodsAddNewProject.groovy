@@ -80,7 +80,7 @@ public class ReusableMethodsAddNewProject extends BaseClass{
 		String prjCountry 	= data.getCellData(sheetName, "Country", rowNum);
 		String prjState 	= data.getCellData(sheetName, "State", rowNum);
 		String prjZip 		= data.getCellData(sheetName, "Zip", rowNum);
-		
+
 
 		String ProjectName = prjName + prjRating +formatarDate.format(date)
 		navigation.clickAddProject()
@@ -165,6 +165,4 @@ public class ReusableMethodsAddNewProject extends BaseClass{
 		data.setCellData(sheetName,"Project ID", rowNum, Project_ID)
 		WebUI.delay(5)
 	}
-
-
 }
