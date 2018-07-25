@@ -3,7 +3,7 @@
    <description></description>
    <name>Owner_organization</name>
    <tag></tag>
-   <elementGuidId>acb42b14-eda5-47d7-9bdd-18a7a3d93ce4</elementGuidId>
+   <elementGuidId>6cf14de9-2ae9-4ad1-accb-6fe7bc18a656</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,7 +11,7 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
+      <value>textarea</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -25,7 +25,7 @@
       <matchCondition>equals</matchCondition>
       <name>maxlength</name>
       <type>Main</type>
-      <value>40</value>
+      <value>100</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control ng-pristine ng-untouched ng-valid ng-valid-maxlength deactivateInput ng-not-empty</value>
+      <value>form-control ng-pristine ng-untouched ng-valid ng-valid-maxlength deactivateInput_manage ng-not-empty</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -60,7 +60,7 @@
       <matchCondition>equals</matchCondition>
       <name>ng-class</name>
       <type>Main</type>
-      <value>{'deactivateInput': true}</value>
+      <value>{'deactivateInput_manage': true}</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

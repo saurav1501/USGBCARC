@@ -141,7 +141,7 @@ public class ReusableMethodsMeasuresParking extends BaseClass {
 			WebUI.click(findTestObject('Page_Arc dashboard/button_Next'))
 			WebUI.delay(3)
 		}
-	//	WebUI.click(findTestObject('Page_Arc dashboard/sideBar'))
+		//	WebUI.click(findTestObject('Page_Arc dashboard/sideBar'))
 		WebUI.click(findTestObject('Page_Arc dashboard/a_ Measures'))
 		WebUI.doubleClick(findTestObject('Page_Arc dashboard/a_ Management'))
 		WebUI.delay(2)
@@ -153,7 +153,7 @@ public class ReusableMethodsMeasuresParking extends BaseClass {
 		WebUI.delay(2)
 		WebUI.doubleClick(findTestObject('Page_Arc dashboard/span_B1 - Placemaking'))
 		WebUI.waitForPageLoad(10)
-	//	WebUI.click(findTestObject('Page_Arc dashboard/sideBar'))
+		//	WebUI.click(findTestObject('Page_Arc dashboard/sideBar'))
 		WebUI.delay(2)
 
 		for (int i = 0; i <= 12; i++) {
@@ -263,7 +263,7 @@ public class ReusableMethodsMeasuresParking extends BaseClass {
 			WebUI.click(findTestObject('Page_Arc dashboard/button_Next'))
 			WebUI.delay(3)
 		}
-	//	WebUI.click(findTestObject('Page_Arc dashboard/sideBar'))
+		//	WebUI.click(findTestObject('Page_Arc dashboard/sideBar'))
 		WebUI.click(findTestObject('Page_Arc dashboard/a_ Measures'))
 		WebUI.doubleClick(findTestObject('Page_Arc dashboard/a_ Programs'))
 		WebUI.delay(2)
@@ -425,7 +425,7 @@ public class ReusableMethodsMeasuresParking extends BaseClass {
 			WebUI.click(findTestObject('Page_Arc dashboard/button_Next'))
 			WebUI.delay(3)
 		}
-	//	WebUI.click(findTestObject('Page_Arc dashboard/sideBar'))
+		//	WebUI.click(findTestObject('Page_Arc dashboard/sideBar'))
 		WebUI.click(findTestObject('Page_Arc dashboard/a_ Measures'))
 		WebUI.doubleClick(findTestObject('Page_Arc dashboard/a_ Technology  Structure Desig'))
 		WebUI.println "Verified Total Points By Marking all credit for Management section successuflly"
@@ -438,7 +438,7 @@ public class ReusableMethodsMeasuresParking extends BaseClass {
 		WebUI.delay(2)
 		WebUI.doubleClick(findTestObject('Page_Arc dashboard/span_D1 - Innovative Approach'))
 		WebUI.delay(2)
-	//	WebUI.click(findTestObject('Page_Arc dashboard/sideBar'))
+		//	WebUI.click(findTestObject('Page_Arc dashboard/sideBar'))
 		WebUI.click(findTestObject('BasePoint/CityCom/Checkbox1'))
 		WebUI.delay(3)
 		for (int i = 0; i < 1; i++) {
@@ -458,7 +458,7 @@ public class ReusableMethodsMeasuresParking extends BaseClass {
 			WebUI.click(findTestObject('Page_Arc dashboard/button_Next'))
 			WebUI.delay(2)
 		}
-	//	WebUI.click(findTestObject('Page_Arc dashboard/sideBar'))
+		//	WebUI.click(findTestObject('Page_Arc dashboard/sideBar'))
 		WebUI.click(findTestObject('Page_Arc dashboard/a_ Measures'))
 		WebUI.doubleClick(findTestObject('Page_Arc dashboard/a_ Innovation'))
 		WebUI.println "Verified Total Points By Marking all credit for Management section successuflly"
@@ -508,10 +508,12 @@ public class ReusableMethodsMeasuresParking extends BaseClass {
 		WebUI.clearText(findTestObject('Manage/Parking/input_noOfParkingSpace'))
 		WebUI.sendKeys(findTestObject('Manage/Parking/input_noOfParkingSpace'),"50")
 		WebUI.click(findTestObject('Manage/Parking/input_noOfParkingLevels'))
+		WebUI.delay(1)
 
 		WebUI.clearText(findTestObject('Manage/Parking/input_noOfParkingLevels'))
 		WebUI.sendKeys(findTestObject('Manage/Parking/input_noOfParkingLevels'),"50")
 		WebUI.click(findTestObject('Manage/Parking/ClickSave'))
+		WebUI.delay(1)
 
 		WebUI.sendKeys(findTestObject('Manage/Parking/input_projectWebsite'),"http://www.parking-net.com")
 		WebUI.sendKeys(findTestObject('Manage/Parking/textarea_projectInfo'),"When assigned parking is provided, designated accessible parking .");
@@ -519,7 +521,7 @@ public class ReusableMethodsMeasuresParking extends BaseClass {
 		WebUI.click(findTestObject('Manage/Parking/ClickSave'))
 		WebUI.delay(5)
 		WebUI.refresh();
-		WebUI.waitForPageLoad(5)
+		WebUI.delay(5)
 
 		println "Verifying edited functionlity for no of parking space , level , website , about parking fields after refresh"
 		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/Parking/input_noOfParkingSpace'),"value").contains("50"),"Not Valid")
@@ -548,9 +550,9 @@ public class ReusableMethodsMeasuresParking extends BaseClass {
 		WebUI.delay(1)
 		WebUI.click(findTestObject('Manage/Parking/ManageProject'))
 		WebUI.delay(2)
-
 		println "Verify if  registered project  project id , address , city  , country , owner details , data commissioned , project country & satate fields displays the correct data."
 		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/Parking/project_ID'),"value").contains(prjId),"Not Valid")
+		WebUI.scrollToElement(findTestObject('Manage/Parking/Owner_organization'), 2)
 		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/Parking/Owner_organization'),"value").contains(ownerOrg),"Not Valid")
 		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/Parking/projectOwnerCounty'),"value").contains(ownerCountry),"Not Valid")
 		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/Parking/project_owneremail'),"value").contains(ownerMail),"Not Valid")
