@@ -21,8 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 
 
 try {
-	CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsSearch.searchProgramPortfolio'(GlobalVariable.PortfoliosSheetsSheet,GlobalVariable.rowNumTwo)
-	CustomKeywords.'com.arc.ReusableMethods.ResuableMethodsPortfolio.AddTeamMember'(GlobalVariable.PortfoliosSheetsSheet,GlobalVariable.rowNumTwo)
+	CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsSearch.searchProgramPortfolio'(GlobalVariable.PortfoliosSheet,GlobalVariable.rowNumTwo)
+	CustomKeywords.'com.arc.ReusableMethods.ResuableMethodsPortfolio.AddTeamMember'(GlobalVariable.PortfoliosSheet,GlobalVariable.rowNumTwo)
 	
 } catch (Throwable t) {
 	System.out.println(t.getLocalizedMessage())

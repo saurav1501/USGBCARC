@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 try {
 	CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToPortfolio'()
-	CustomKeywords.'com.arc.ReusableMethods.ResuableMethodsPortfolio.createNewPortfolio'(GlobalVariable.PortfoliosSheetsSheet,GlobalVariable.rowNumTwo)
+	CustomKeywords.'com.arc.ReusableMethods.ResuableMethodsPortfolio.createNewPortfolio'(GlobalVariable.PortfoliosSheet,GlobalVariable.rowNumTwo)
 	
 } catch (Throwable t) {
 	System.out.println(t.getLocalizedMessage())
