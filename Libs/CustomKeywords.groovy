@@ -596,30 +596,6 @@ def static "com.arc.ReusableMethods.ReusableMethodsSubmitReview.submitPreCertAnd
     (new com.arc.ReusableMethods.ReusableMethodsSubmitReview()).submitPreCertAndVerifySuccessMessage()
 }
 
-def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.preRequisiteAttemptTransit"() {
-    (new com.arc.ReusableMethods.ReusableMethodsBasePoint()).preRequisiteAttemptTransit()
-}
-
-def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.basePointAttemptTransit"() {
-    (new com.arc.ReusableMethods.ReusableMethodsBasePoint()).basePointAttemptTransit()
-}
-
-def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.basePointOptionA"(
-    	String cdataInputSheet	
-     , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsBasePoint()).basePointOptionA(
-        	cdataInputSheet
-         , 	rowNum)
-}
-
-def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.basePointOptionB"(
-    	String sheetName	
-     , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsBasePoint()).basePointOptionB(
-        	sheetName
-         , 	rowNum)
-}
-
 def static "com.arc.ReusableMethods.ReusableMethodsManage.verifyProjectDetailsCityCom"(
     	String sheetName	
      , 	int rowNum	) {
@@ -698,4 +674,28 @@ def static "com.arc.ReusableMethods.ReusableMethodsManage.verifyBillingOrderFile
 
 def static "com.arc.ReusableMethods.ReusableMethodsManage.installAppsCustom"() {
     (new com.arc.ReusableMethods.ReusableMethodsManage()).installAppsCustom()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.preRequisiteAttemptTransit"() {
+    (new com.arc.ReusableMethods.ReusableMethodsBasePoint()).preRequisiteAttemptTransit()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.basePointAttemptTransit"() {
+    (new com.arc.ReusableMethods.ReusableMethodsBasePoint()).basePointAttemptTransit()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.basePointOptionA"(
+    	String cdataInputSheet	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsBasePoint()).basePointOptionA(
+        	cdataInputSheet
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.basePointOptionB"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsBasePoint()).basePointOptionB(
+        	sheetName
+         , 	rowNum)
 }
