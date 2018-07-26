@@ -360,7 +360,7 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.delay(2)
 		WebUI.click(findTestObject('Portfolio/Common/a_Top 5 Performers'))
 		WebUI.delay(5)
-		
+
 		String prjName1    =data.getCellData(sheetName, "Project Name", 6);  //6,8,9,2,5
 		String prjId1    =data.getCellData(sheetName, "ID", 6);
 		String prjCity1    =data.getCellData(sheetName, "City", 6);
@@ -418,7 +418,7 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		println "Filter for carbon top 5 score below details are verified Successfully" + prjName5  + prjId5  + prjCity5 +  prjScore5
 
 
-		}
+	}
 
 	@Keyword
 	public void analyticsWaterScore(String sheetName, int rowNum ) throws IOException, InterruptedException {
@@ -806,9 +806,8 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.clearText(findTestObject('Portfolio/Goal/carbon_percent_reduction'))
 		WebUI.sendKeys(findTestObject('Portfolio/Goal/carbon_percent_reduction'), cpReduction)
 		println  "Filling carbon baseline value"
-		WebUI.clearText(findTestObject('Portfolio/Goal/energy_baseline_value'))
-		WebUI.sendKeys(findTestObject('Portfolio/Goal/energy_baseline_value'), cbValue)
-
+		WebUI.clearText(findTestObject('Portfolio/Goal/carbon_baseline_value'))
+		WebUI.sendKeys(findTestObject('Portfolio/Goal/carbon_baseline_value'), cbValue)
 		WebUI.click(findTestObject('Portfolio/Goal/CarbonDiffGoal'))
 		WebUI.delay(3)
 		String forntenddiffGoal = WebUI.getText(findTestObject('Portfolio/Goal/CarbonDiffGoal'))
@@ -1614,9 +1613,9 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		System.out.println(total_No_Proj);
 
 		println "Test passed counted total number of project based on area"
-		String  annualWaterConsuption=WebUI.getText(findTestObject('Portfolio/Total/ACMTCO2e'))
-		System.out.println(annualWaterConsuption);
-		double acmtco2e =Double.parseDouble(annualWaterConsuption);
+		String  annualCarbonConsuption=WebUI.getText(findTestObject('Portfolio/Total/ACMTCO2e'))
+		System.out.println(annualCarbonConsuption);
+		double acmtco2e =Double.parseDouble(annualCarbonConsuption);
 		String avgOccupanit = WebUI.getText(findTestObject('Portfolio/Total/AOccupanit'))
 		String repavgOccupanit  = avgOccupanit.replace(" occupants", "");
 		double favgOccupanit_proj =Double.parseDouble(repavgOccupanit);
@@ -1624,7 +1623,6 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		String avg_sqarefoot1  = avg_sqarefoot.replace(" sf", "");
 		double avg_sqarefoot2 =Double.parseDouble(avg_sqarefoot1);
 		System.out.println(avg_sqarefoot2);
-
 
 		WebUI.click(findTestObject('Portfolio/Common/a_ Carbon'))
 		WebUI.delay(5)
@@ -1638,12 +1636,14 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		BigDecimal cGoalPercentage = new BigDecimal(result);
 		cGoalPercentage =  cGoalPercentage .setScale(2, RoundingMode.HALF_UP);
 		String areductionTarget = WebUI.getText(findTestObject('Portfolio/Total/RTarget'))
+		
 		double areductionTarget1 = Double.parseDouble(areductionTarget);
 		BigDecimal areductionTarget2 = new BigDecimal(areductionTarget1);
 		areductionTarget2 =  areductionTarget2 .setScale(2, RoundingMode.HALF_UP);
 		Assert.assertEquals(areductionTarget2, cGoalPercentage);
 		System.out.println(areductionTarget2);
 		System.out.println(cGoalPercentage);
+		
 		println  "verifyed 2018 Reduction Targets"
 
 		println "Test started verifying average occpant per project"

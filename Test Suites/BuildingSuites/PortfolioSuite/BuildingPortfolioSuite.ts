@@ -4,7 +4,7 @@
    <name>BuildingPortfolioSuite</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-07-25T15:45:35</lastRun>
+   <lastRun>2018-07-26T12:00:14</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -20,7 +20,7 @@
    <testCaseLink>
       <guid>bd4d4243-4f13-4cb8-bb7d-9d10c4cebc5c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Buildings/MyPortfolios/CreateNewPortfolioTest</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -32,7 +32,7 @@
    <testCaseLink>
       <guid>b5cdcbb1-9746-463f-8219-6d9e2e552a93</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Buildings/MyPortfolios/AddProjectInsidePortfolioTest</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -74,55 +74,55 @@
    <testCaseLink>
       <guid>9b98f537-e63f-4a80-90c3-587609cbf710</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Buildings/MyPortfolios/GoalCertificationTest</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>7ea62c06-b7c9-4b20-9039-15239ad55ce1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Buildings/MyPortfolios/AnalyticsCarbonDataTest</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f9cb18ca-74ff-4ce4-a848-17b7573188d3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Buildings/MyPortfolios/AnalyticsDiversionWasteDataTest</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>14eebf59-4535-46b2-99e1-08560ec4a63a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Buildings/MyPortfolios/AnalyticsEnergyScoreTest</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>eca8d2bd-d3ba-4dc4-aa5f-f0b2e4834be0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Buildings/MyPortfolios/AnalyticsEnergyDataTest</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>6a0bdf03-2662-4666-938c-4dc0d3917758</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Buildings/MyPortfolios/AnalyticsCarbonTopScoreTest</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>32fa08f3-4a9e-4971-acad-844b3974b61b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Buildings/MyPortfolios/AnalyticsGenerationWasteDataTest</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b4d22fe6-75c5-4632-b872-82d9666f2245</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Buildings/MyPortfolios/AnalyticsHumanExperienceScoreTest</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>82a7bf3b-c7b1-46c1-921e-e68913296f5c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Buildings/MyPortfolios/AnalyticsHumExpDataTest</testCaseId>
    </testCaseLink>
    <testCaseLink>
