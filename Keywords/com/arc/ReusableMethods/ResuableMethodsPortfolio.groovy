@@ -243,7 +243,7 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.click(findTestObject('Portfolio/Common/a_Top 5 Performers'))
 		WebUI.delay(5)
 
-		String prjName1    =data.getCellData(sheetName, "Project Name", 2);  //2, 3 ,4, 8 , 6
+		String prjName1    =data.getCellData(sheetName, "Project Name", 2);  //2,3,8,4,6
 		String prjId1    =data.getCellData(sheetName, "ID", 2);
 		String prjCity1    =data.getCellData(sheetName, "City", 2);
 		String prjScore1   =data.getCellData(sheetName, "energyScore", 2);
@@ -266,10 +266,10 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		println "Filter for Energy top 5 score below details are verified Successfully" + prjName2  + prjId2  + prjCity2 +  prjScore2
 
 
-		String prjName3   =data.getCellData(sheetName, "Project Name", 4);
-		String prjId3    =data.getCellData(sheetName, "ID", 4);
-		String prjCity3   =data.getCellData(sheetName, "City", 4);
-		String prjScore3   =data.getCellData(sheetName, "energyScore", 4);
+		String prjName3   =data.getCellData(sheetName, "Project Name", 8);
+		String prjId3    =data.getCellData(sheetName, "ID", 8);
+		String prjCity3   =data.getCellData(sheetName, "City", 8);
+		String prjScore3   =data.getCellData(sheetName, "energyScore", 8);
 
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectName3')), prjName3, false)
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectId3')), prjId3, false)
@@ -277,10 +277,10 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FTopSocre3')), prjScore3, false)
 		println "Filter for Energy top 5 score below details are verified Successfully" + prjName3  + prjId3  + prjCity3 +  prjScore3
 
-		String prjName4    =data.getCellData(sheetName, "Project Name", 8);
-		String prjId4    =data.getCellData(sheetName, "ID", 8);
-		String prjCity4    =data.getCellData(sheetName, "City", 8);
-		String prjScore4   =data.getCellData(sheetName, "energyScore", 8);
+		String prjName4    =data.getCellData(sheetName, "Project Name", 4);
+		String prjId4    =data.getCellData(sheetName, "ID", 4);
+		String prjCity4    =data.getCellData(sheetName, "City", 4);
+		String prjScore4   =data.getCellData(sheetName, "energyScore", 4);
 
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectName4')), prjName4, false)
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectId4')), prjId4, false)
@@ -361,10 +361,10 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.click(findTestObject('Portfolio/Common/a_Top 5 Performers'))
 		WebUI.delay(5)
 
-		String prjName1    =data.getCellData(sheetName, "Project Name", 2);  //2, 3 ,4, 8 , 6
-		String prjId1    =data.getCellData(sheetName, "ID", 2);
-		String prjCity1    =data.getCellData(sheetName, "City", 2);
-		String prjScore1   =data.getCellData(sheetName, "energyScore", 2);
+		String prjName1    =data.getCellData(sheetName, "Project Name", 6);  //6,8,9,2,5
+		String prjId1    =data.getCellData(sheetName, "ID", 6);
+		String prjCity1    =data.getCellData(sheetName, "City", 6);
+		String prjScore1   =data.getCellData(sheetName, "energyScore", 6);
 
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectName1')), prjName1, false)
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectId1')), prjId1, false)
@@ -372,10 +372,10 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FTopSocre1')), prjScore1, false)
 		println "Filter for carbon top 5 score below details are verified Successfully" + prjName1  + prjId1  + prjCity1 +  prjScore1
 
-		String prjName2    =data.getCellData(sheetName, "Project Name", 3);
-		String prjId2    =data.getCellData(sheetName, "ID", 3);
-		String prjCity2    =data.getCellData(sheetName, "City", 3);
-		String prjScore2   =data.getCellData(sheetName, "energyScore", 3);
+		String prjName2    =data.getCellData(sheetName, "Project Name", 8);
+		String prjId2    =data.getCellData(sheetName, "ID", 8);
+		String prjCity2    =data.getCellData(sheetName, "City", 8);
+		String prjScore2   =data.getCellData(sheetName, "energyScore", 8);
 
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectName2')), prjName2, false)
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectId2')), prjId2, false)
@@ -384,10 +384,10 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		println "Filter for carbon top 5 score below details are verified Successfully" + prjName2  + prjId2  + prjCity2 +  prjScore2
 
 
-		String prjName3   =data.getCellData(sheetName, "Project Name", 4);
-		String prjId3    =data.getCellData(sheetName, "ID", 4);
-		String prjCity3   =data.getCellData(sheetName, "City", 4);
-		String prjScore3   =data.getCellData(sheetName, "energyScore", 4);
+		String prjName3   =data.getCellData(sheetName, "Project Name", 9);
+		String prjId3    =data.getCellData(sheetName, "ID", 9);
+		String prjCity3   =data.getCellData(sheetName, "City", 9);
+		String prjScore3   =data.getCellData(sheetName, "energyScore", 9);
 
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectName3')), prjName3, false)
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectId3')), prjId3, false)
@@ -395,10 +395,10 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FTopSocre3')), prjScore3, false)
 		println "Filter for carbon top 5 score below details are verified Successfully" + prjName3  + prjId3  + prjCity3 +  prjScore3
 
-		String prjName4    =data.getCellData(sheetName, "Project Name", 8);
-		String prjId4    =data.getCellData(sheetName, "ID", 8);
-		String prjCity4    =data.getCellData(sheetName, "City", 8);
-		String prjScore4   =data.getCellData(sheetName, "energyScore", 8);
+		String prjName4    =data.getCellData(sheetName, "Project Name", 2);
+		String prjId4    =data.getCellData(sheetName, "ID", 2);
+		String prjCity4    =data.getCellData(sheetName, "City", 2);
+		String prjScore4   =data.getCellData(sheetName, "energyScore", 2);
 
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectName4')), prjName4, false)
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectId4')), prjId4, false)
@@ -406,16 +406,17 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FTopSocre4')), prjScore4, false)
 		println "Filter for carbon top 5 score below details are verified Successfully" + prjName4  + prjId4  + prjCity4 +  prjScore4
 
-		String prjName5    =data.getCellData(sheetName, "Project Name", 6);
-		String prjId5    =data.getCellData(sheetName, "ID", 6);
-		String prjCity5    =data.getCellData(sheetName, "City", 6);
-		String prjScore5   =data.getCellData(sheetName, "energyScore", 6);
+		String prjName5    =data.getCellData(sheetName, "Project Name", 5);
+		String prjId5    =data.getCellData(sheetName, "ID", 5);
+		String prjCity5    =data.getCellData(sheetName, "City", 5);
+		String prjScore5   =data.getCellData(sheetName, "energyScore", 5);
 
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectName5')), prjName5, false)
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectId5')), prjId5, false)
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FCity5')), prjCity5, false)
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FTopSocre5')), prjScore5, false)
 		println "Filter for carbon top 5 score below details are verified Successfully" + prjName5  + prjId5  + prjCity5 +  prjScore5
+
 
 	}
 
@@ -451,7 +452,7 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.click(findTestObject('Portfolio/Common/a_Top 5 Performers'))
 		WebUI.delay(5)
 
-		String prjName1    =data.getCellData(sheetName, "Project Name", 3);  //3,4,7,2,6
+		String prjName1    =data.getCellData(sheetName, "Project Name", 3);  //'3,4,2,7,5
 		String prjId1    =data.getCellData(sheetName, "ID", 3);
 		String prjCity1    =data.getCellData(sheetName, "City", 3);
 		String prjScore1   =data.getCellData(sheetName, "waterScore", 3);
@@ -474,10 +475,10 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		println "Filter for Energy top 5 score below details are verified Successfully" + prjName2  + prjId2  + prjCity2 +  prjScore2
 
 
-		String prjName3   =data.getCellData(sheetName, "Project Name", 7);
-		String prjId3    =data.getCellData(sheetName, "ID", 7);
-		String prjCity3   =data.getCellData(sheetName, "City", 7);
-		String prjScore3   =data.getCellData(sheetName, "waterScore", 7);
+		String prjName3   =data.getCellData(sheetName, "Project Name", 2);
+		String prjId3    =data.getCellData(sheetName, "ID", 2);
+		String prjCity3   =data.getCellData(sheetName, "City", 2);
+		String prjScore3   =data.getCellData(sheetName, "waterScore", 2);
 
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectName3')), prjName3, false)
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectId3')), prjId3, false)
@@ -485,10 +486,10 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FTopSocre3')), prjScore3, false)
 		println "Filter for Energy top 5 score below details are verified Successfully" + prjName3  + prjId3  + prjCity3 +  prjScore3
 
-		String prjName4    =data.getCellData(sheetName, "Project Name", 2);
-		String prjId4    =data.getCellData(sheetName, "ID", 2);
-		String prjCity4    =data.getCellData(sheetName, "City", 2);
-		String prjScore4   =data.getCellData(sheetName, "waterScore", 2);
+		String prjName4    =data.getCellData(sheetName, "Project Name", 7);
+		String prjId4    =data.getCellData(sheetName, "ID", 7);
+		String prjCity4    =data.getCellData(sheetName, "City", 7);
+		String prjScore4   =data.getCellData(sheetName, "waterScore", 7);
 
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectName4')), prjName4, false)
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectId4')), prjId4, false)
@@ -496,10 +497,10 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FTopSocre4')), prjScore4, false)
 		println "Filter for Energy top 5 score below details are verified Successfully" + prjName4  + prjId4  + prjCity4 +  prjScore4
 
-		String prjName5    =data.getCellData(sheetName, "Project Name", 6);
-		String prjId5    =data.getCellData(sheetName, "ID", 6);
-		String prjCity5    =data.getCellData(sheetName, "City", 6);
-		String prjScore5   =data.getCellData(sheetName, "waterScore", 6);
+		String prjName5    =data.getCellData(sheetName, "Project Name", 5);
+		String prjId5    =data.getCellData(sheetName, "ID", 5);
+		String prjCity5    =data.getCellData(sheetName, "City", 5);
+		String prjScore5   =data.getCellData(sheetName, "waterScore", 5);
 
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectName5')), prjName5, false)
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/Common/FProjectId5')), prjId5, false)
@@ -631,7 +632,7 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.click(findTestObject('Portfolio/Common/a_Top 5 Performers'))
 		WebUI.delay(5)
 
-		String prjName1    =data.getCellData(sheetName, "Project Name", 7);  //7,5,2,9,6
+		String prjName1    =data.getCellData(sheetName, "Project Name", 7);  //'7,5,2,9,6
 		String prjId1    =data.getCellData(sheetName, "ID", 7);
 		String prjCity1    =data.getCellData(sheetName, "City", 7);
 		String prjScore1   =data.getCellData(sheetName, "transportation", 7);
@@ -720,10 +721,10 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.click(findTestObject('Portfolio/Common/a_Top 5 Performers'))
 		WebUI.delay(5)
 
-		String prjName1    =data.getCellData(sheetName, "Project Name", 5);  //5 , 7 ,9 ,2 ,6
-		String prjId1    =data.getCellData(sheetName, "ID", 5);
-		String prjCity1    =data.getCellData(sheetName, "City", 5);
-		String prjScore1   =data.getCellData(sheetName, "humanExperience", 5);
+		String prjName1    =data.getCellData(sheetName, "Project Name", 9);  //9,3,5,7,6
+		String prjId1    =data.getCellData(sheetName, "ID", 9);
+		String prjCity1    =data.getCellData(sheetName, "City", 9);
+		String prjScore1   =data.getCellData(sheetName, "humanExperience", 9);
 
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/TranHum/FProjectName1')), prjName1, false)
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/TranHum/FProjectId1')), prjId1, false)
@@ -731,10 +732,10 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/TranHum/FTopSocre1')), prjScore1, false)
 		println "Filter for Humam experiace top 5 score below details are verified Successfully" + prjName1  + prjId1  + prjCity1 +  prjScore1
 
-		String prjName2    =data.getCellData(sheetName, "Project Name", 7);
-		String prjId2    =data.getCellData(sheetName, "ID", 7);
-		String prjCity2    =data.getCellData(sheetName, "City", 7);
-		String prjScore2   =data.getCellData(sheetName, "humanExperience", 7);
+		String prjName2    =data.getCellData(sheetName, "Project Name", 3);
+		String prjId2    =data.getCellData(sheetName, "ID", 3);
+		String prjCity2    =data.getCellData(sheetName, "City", 3);
+		String prjScore2   =data.getCellData(sheetName, "humanExperience", 3);
 
 
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/TranHum/FProjectName2')), prjName2, false)
@@ -744,10 +745,10 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		println "Filter for Humam experiace top 5 score below details are verified Successfully" + prjName2  + prjId2  + prjCity2 +  prjScore2
 
 
-		String prjName3    =data.getCellData(sheetName, "Project Name",9 );
-		String prjId3    =data.getCellData(sheetName, "ID", 9);
-		String prjCity3    =data.getCellData(sheetName, "City", 9);
-		String prjScore3   =data.getCellData(sheetName, "humanExperience", 9);
+		String prjName3    =data.getCellData(sheetName, "Project Name",5 );
+		String prjId3    =data.getCellData(sheetName, "ID", 5);
+		String prjCity3    =data.getCellData(sheetName, "City", 5);
+		String prjScore3   =data.getCellData(sheetName, "humanExperience", 5);
 
 
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/TranHum/FProjectName3')), prjName3, false)
@@ -756,10 +757,10 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/TranHum/FTopSocre3')), prjScore3, false)
 		println "Filter for Humam experiace top 5 score below details are verified Successfully" + prjName3  + prjId3  + prjCity3 +  prjScore3
 
-		String prjName4    =data.getCellData(sheetName, "Project Name",2);
-		String prjId4    =data.getCellData(sheetName, "ID", 2);
-		String prjCity4    =data.getCellData(sheetName, "City",2);
-		String prjScore4   =data.getCellData(sheetName, "humanExperience", 2);
+		String prjName4    =data.getCellData(sheetName, "Project Name",7);
+		String prjId4    =data.getCellData(sheetName, "ID", 7);
+		String prjCity4    =data.getCellData(sheetName, "City",7);
+		String prjScore4   =data.getCellData(sheetName, "humanExperience", 7);
 
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/TranHum/FProjectName4')), prjName4, false)
 		WebUI.verifyMatch(WebUI.getText(findTestObject('Portfolio/TranHum/FProjectId4')), prjId4, false)
@@ -805,9 +806,8 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.clearText(findTestObject('Portfolio/Goal/carbon_percent_reduction'))
 		WebUI.sendKeys(findTestObject('Portfolio/Goal/carbon_percent_reduction'), cpReduction)
 		println  "Filling carbon baseline value"
-		WebUI.clearText(findTestObject('Portfolio/Goal/energy_baseline_value'))
-		WebUI.sendKeys(findTestObject('Portfolio/Goal/energy_baseline_value'), cbValue)
-
+		WebUI.clearText(findTestObject('Portfolio/Goal/carbon_baseline_value'))
+		WebUI.sendKeys(findTestObject('Portfolio/Goal/carbon_baseline_value'), cbValue)
 		WebUI.click(findTestObject('Portfolio/Goal/CarbonDiffGoal'))
 		WebUI.delay(3)
 		String forntenddiffGoal = WebUI.getText(findTestObject('Portfolio/Goal/CarbonDiffGoal'))
@@ -1613,9 +1613,9 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		System.out.println(total_No_Proj);
 
 		println "Test passed counted total number of project based on area"
-		String  annualWaterConsuption=WebUI.getText(findTestObject('Portfolio/Total/ACMTCO2e'))
-		System.out.println(annualWaterConsuption);
-		double acmtco2e =Double.parseDouble(annualWaterConsuption);
+		String  annualCarbonConsuption=WebUI.getText(findTestObject('Portfolio/Total/ACMTCO2e'))
+		System.out.println(annualCarbonConsuption);
+		double acmtco2e =Double.parseDouble(annualCarbonConsuption);
 		String avgOccupanit = WebUI.getText(findTestObject('Portfolio/Total/AOccupanit'))
 		String repavgOccupanit  = avgOccupanit.replace(" occupants", "");
 		double favgOccupanit_proj =Double.parseDouble(repavgOccupanit);
@@ -1623,7 +1623,6 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		String avg_sqarefoot1  = avg_sqarefoot.replace(" sf", "");
 		double avg_sqarefoot2 =Double.parseDouble(avg_sqarefoot1);
 		System.out.println(avg_sqarefoot2);
-
 
 		WebUI.click(findTestObject('Portfolio/Common/a_ Carbon'))
 		WebUI.delay(5)
@@ -1637,12 +1636,14 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		BigDecimal cGoalPercentage = new BigDecimal(result);
 		cGoalPercentage =  cGoalPercentage .setScale(2, RoundingMode.HALF_UP);
 		String areductionTarget = WebUI.getText(findTestObject('Portfolio/Total/RTarget'))
+		
 		double areductionTarget1 = Double.parseDouble(areductionTarget);
 		BigDecimal areductionTarget2 = new BigDecimal(areductionTarget1);
 		areductionTarget2 =  areductionTarget2 .setScale(2, RoundingMode.HALF_UP);
 		Assert.assertEquals(areductionTarget2, cGoalPercentage);
 		System.out.println(areductionTarget2);
 		System.out.println(cGoalPercentage);
+		
 		println  "verifyed 2018 Reduction Targets"
 
 		println "Test started verifying average occpant per project"
