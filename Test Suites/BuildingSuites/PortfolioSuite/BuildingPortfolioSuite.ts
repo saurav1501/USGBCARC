@@ -4,7 +4,7 @@
    <name>BuildingPortfolioSuite</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-07-25T11:26:18</lastRun>
+   <lastRun>2018-07-25T15:45:35</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
