@@ -26,20 +26,18 @@ import java.lang.String as String
 import java.sql.ResultSet as ResultSet
 import java.text.SimpleDateFormat as SimpleDateFormat
 
+try {
+    CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToBuildingTransit'()
+	
+	CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsAddNewProject.buildingTransitAddNewProject'(GlobalVariable.BuildingSheet, GlobalVariable.rowNumThree)
 
-	try {
-	
-		CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToBuilding'()
-		CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsAddNewProject.USBuildingAddNewProject'(GlobalVariable.BuildingSheet, GlobalVariable.rowNumSix)		
-	
-	} catch (Throwable t) {
-	
-		System.out.println(t.getLocalizedMessage())
-		Error e1 = new Error(t.getMessage())
-		e1.setStackTrace(t.getStackTrace())
-		e1.printStackTrace()
 	}
+catch (Throwable t) {
+    System.out.println(t.getLocalizedMessage())
 
+    Error e1 = new Error(t.getMessage())
 
+    e1.setStackTrace(t.getStackTrace())
 
-
+    e1.printStackTrace()
+} 

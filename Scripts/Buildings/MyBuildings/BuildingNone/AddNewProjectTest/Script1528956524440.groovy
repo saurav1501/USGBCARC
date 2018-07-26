@@ -27,8 +27,10 @@ import java.sql.ResultSet as ResultSet
 import java.text.SimpleDateFormat as SimpleDateFormat
 
 
+//Add new Project Test
+
 	try {
-	    
+	
 		CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToBuilding'()
 		CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsAddNewProject.buildingAddNewProject'(GlobalVariable.BuildingSheet, GlobalVariable.rowNumSix)		
 	

@@ -7,6 +7,155 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 public class ReusableMethodsBasePoint extends BaseClass{
 
+	
+	@Keyword
+	public void preRequisiteAttemptTransit(){
+		//WebUI.click(findTestObject('Object Repository/SubmitReview/clickOnSideBar'))
+		WebUI.click(findTestObject('PreRequisite/a_ Prerequisites'))
+		//WebUI.setViewPortSize(1500,800)
+		WebUI.delay(3)
+		WebUI.click(findTestObject('PreRequisite/span_Site Management Policy'))
+
+		WebUI.delay(5)
+		println 1
+
+		WebUI.click(findTestObject('PreRequisite/CheckBox1'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('PreRequisite/CheckBox2'))
+		WebUI.delay(2)
+		WebUI.click(findTestObject('PreRequisite/button_Attempted'))
+		WebUI.click(findTestObject('PreRequisite/a_Ready for Review'))
+		WebUI.delay(3)
+		WebUI.scrollToElement(findTestObject('PreRequisite/button_Next'), 2)
+		WebUI.click(findTestObject('PreRequisite/button_Next'))
+
+
+		println 2
+
+		WebUI.click(findTestObject('PreRequisite/CheckBox1'))
+		WebUI.delay(2)
+		WebUI.click(findTestObject('PreRequisite/button_Attempted'))
+		WebUI.click(findTestObject('PreRequisite/a_Ready for Review'))
+		WebUI.delay(3)
+		WebUI.scrollToElement(findTestObject('PreRequisite/button_Next'), 2)
+		WebUI.click(findTestObject('PreRequisite/button_Next'))
+
+		println 3
+
+		WebUI.click(findTestObject('PreRequisite/CheckBox1'))
+		WebUI.delay(2)
+		WebUI.click(findTestObject('PreRequisite/button_Attempted'))
+		WebUI.click(findTestObject('PreRequisite/a_Ready for Review'))
+		WebUI.delay(3)
+		WebUI.scrollToElement(findTestObject('PreRequisite/button_Next'), 2)
+		WebUI.click(findTestObject('PreRequisite/button_Next'))
+
+		println 4
+
+		WebUI.click(findTestObject('PreRequisite/CheckBox1'))
+		WebUI.delay(2)
+		WebUI.click(findTestObject('PreRequisite/button_Attempted'))
+		WebUI.click(findTestObject('PreRequisite/a_Ready for Review'))
+		WebUI.delay(3)
+		WebUI.scrollToElement(findTestObject('PreRequisite/button_Next'), 2)
+		WebUI.click(findTestObject('PreRequisite/button_Next'))
+
+
+		println 5
+
+		WebUI.click(findTestObject('PreRequisite/CheckBox1'))
+		WebUI.delay(2)
+		WebUI.click(findTestObject('PreRequisite/span_Attempted'))
+		WebUI.click(findTestObject('PreRequisite/a_Ready for Review'))
+		WebUI.delay(3)
+		WebUI.scrollToElement(findTestObject('PreRequisite/button_Next'), 2)
+		WebUI.click(findTestObject('PreRequisite/button_Next'))
+
+		println 6
+
+		WebUI.click(findTestObject('PreRequisite/CheckBox1'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('PreRequisite/CheckBox2'))
+		WebUI.delay(2)
+		WebUI.click(findTestObject('PreRequisite/button_Attempted'))
+		WebUI.click(findTestObject('PreRequisite/a_Ready for Review'))
+		WebUI.delay(3)
+		WebUI.scrollToElement(findTestObject('PreRequisite/button_Next'), 2)
+		WebUI.click(findTestObject('PreRequisite/button_Next'))
+
+		println 7
+
+		WebUI.click(findTestObject('PreRequisite/CheckBox1'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('PreRequisite/CheckBox2'))
+		WebUI.delay(2)
+		WebUI.click(findTestObject('PreRequisite/button_Attempted'))
+		WebUI.click(findTestObject('PreRequisite/a_Ready for Review'))
+		WebUI.delay(3)
+		WebUI.scrollToElement(findTestObject('PreRequisite/button_Next'), 2)
+		WebUI.click(findTestObject('PreRequisite/button_Next'))
+
+
+		println 8
+
+		WebUI.click(findTestObject('PreRequisite/CheckBox1'))
+		WebUI.delay(2)
+		WebUI.click(findTestObject('PreRequisite/button_Attempted'))
+		WebUI.click(findTestObject('PreRequisite/a_Ready for Review'))
+		WebUI.delay(3)
+		WebUI.scrollToElement(findTestObject('PreRequisite/button_Next'), 2)
+		WebUI.click(findTestObject('PreRequisite/button_Next'))
+
+		println 9
+
+		WebUI.click(findTestObject('PreRequisite/CheckBox1'))
+		WebUI.delay(2)
+		WebUI.click(findTestObject('PreRequisite/button_Attempted'))
+		WebUI.click(findTestObject('PreRequisite/a_Ready for Review'))
+		WebUI.delay(3)
+		WebUI.scrollToElement(findTestObject('PreRequisite/button_Next'), 2)
+		WebUI.click(findTestObject('PreRequisite/button_Next'))
+
+		println 10
+
+		WebUI.click(findTestObject('PreRequisite/CheckBox1'))
+		WebUI.delay(2)
+		WebUI.click(findTestObject('PreRequisite/span_Attempted'))
+		WebUI.click(findTestObject('PreRequisite/a_Ready for Review'))
+		WebUI.delay(3)
+		WebUI.scrollToElement(findTestObject('PreRequisite/button_Next'), 2)
+		WebUI.click(findTestObject('PreRequisite/button_Next'))
+
+		Assert.assertEquals(WebUI.getText(findTestObject('PreRequisite/span_Site Management Policy')),'Site Management Policy')
+	}
+
+	@Keyword
+	public void basePointAttemptTransit(){
+
+		//WebUI.click(findTestObject('Object Repository/SubmitReview/clickOnSideBar'))
+		WebUI.click(findTestObject('Object Repository/BasePoint/a_ Base Points'))
+		//WebUI.setViewPortSize(1500,800)
+		WebUI.delay(3)
+		WebUI.click(findTestObject('Object Repository/BasePoint/span_Site Development - Protec'))
+
+		for (int c in 0..22){
+
+			WebUI.delay(3)
+			WebUI.click(findTestObject('PreRequisite/CheckBox1'))
+			WebUI.delay(2)
+			WebUI.click(findTestObject('PreRequisite/button_Attempted'))
+			WebUI.click(findTestObject('PreRequisite/a_Ready for Review'))
+			WebUI.delay(2)
+			WebUI.click(findTestObject('Object Repository/BasePoint/button_Ok'))
+			WebUI.delay(2)
+			WebUI.scrollToElement(findTestObject('PreRequisite/button_Next'), 2)
+			WebUI.click(findTestObject('PreRequisite/button_Next'))
+		}
+
+		Assert.assertEquals(WebUI.getText(findTestObject('Object Repository/BasePoint/span_Site Development - Protec')),'Site Development - Protect or Restore Habitat')
+	}
+	
+	
 	@Keyword
 	public void basePointOptionA(String cdataInputSheet,int rowNum) throws IOException, InterruptedException{
 		WebUI.waitForElementClickable(findTestObject('BasePoint/CityCom/a_ Base Points'), 10)

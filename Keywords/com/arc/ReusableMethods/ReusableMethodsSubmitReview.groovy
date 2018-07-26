@@ -24,7 +24,7 @@ public class ReusableMethodsSubmitReview extends BaseClass{
 		WebUI.click(findTestObject('Object Repository/SubmitReview/TransportationCheckBox'))
 		WebUI.click(findTestObject('Object Repository/SubmitReview/HumanExperienceCheckBox'))
 		WebUI.click(findTestObject('SubmitReview/div_Upload'))
-		WebUI.uploadFile(findTestObject('Object Repository/SubmitReview/SendUploadFile'), UploadDocumentDataInput)
+		WebUI.sendKeys(findTestObject('Object Repository/SubmitReview/SendUploadFile'), UploadDocumentDataInput)
 		ReusableMethodsDataInput.clickCancel()
 		WebUI.click(findTestObject('SubmitReview/button_Continue'))
 		WebUI.setText(findTestObject('SubmitReview/input_form-control ng-untouche'), 'abhishekkumar@groupten.com')
@@ -43,7 +43,7 @@ public class ReusableMethodsSubmitReview extends BaseClass{
 			WebUI.check(findTestObject('Object Repository/SubmitReview/CkeckBoxReview',[('index') : it]))
 		}
 		WebUI.click(findTestObject('SubmitReview/div_Upload'))
-		WebUI.uploadFile(findTestObject('Object Repository/SubmitReview/SendUploadFile'), UploadDocumentDataInput)
+		WebUI.sendKeys(findTestObject('Object Repository/SubmitReview/SendUploadFile'), UploadDocumentDataInput)
 		ReusableMethodsDataInput.clickCancel()
 		WebUI.click(findTestObject('Object Repository/SubmitReview/button_Continue'))
 		WebUI.setText(findTestObject('SubmitReview/input_form-control ng-untouche'), 'abhishekkumar@groupten.com')
@@ -85,7 +85,7 @@ public class ReusableMethodsSubmitReview extends BaseClass{
 			WebUI.check(findTestObject('Object Repository/SubmitReview/CkeckBoxReview',[('index') : it]))
 		}
 		WebUI.click(findTestObject('SubmitReview/div_Upload'))
-		WebUI.uploadFile(findTestObject('Object Repository/SubmitReview/SendUploadFile'), UploadDocumentDataInput)
+		WebUI.sendKeys(findTestObject('Object Repository/SubmitReview/SendUploadFile'), UploadDocumentDataInput)
 		WebUI.delay(2)
 		ReusableMethodsDataInput.clickCancel()
 		WebUI.click(findTestObject('Object Repository/SubmitReview/button_Continue'))
@@ -110,7 +110,7 @@ public class ReusableMethodsSubmitReview extends BaseClass{
 			WebUI.check(findTestObject('Object Repository/SubmitReview/CkeckBoxReview',[('index') : it]))
 		}
 		WebUI.click(findTestObject('SubmitReview/div_Upload'))
-		WebUI.uploadFile(findTestObject('Object Repository/SubmitReview/SendUploadFile'), UploadDocumentDataInput)
+		WebUI.sendKeys(findTestObject('Object Repository/SubmitReview/SendUploadFile'), UploadDocumentDataInput)
 		ReusableMethodsDataInput.clickCancel()
 		WebUI.click(findTestObject('Object Repository/SubmitReview/button_Continue'))
 		WebUI.setText(findTestObject('SubmitReview/input_form-control ng-untouche'), 'abhishekkumar@groupten.com')

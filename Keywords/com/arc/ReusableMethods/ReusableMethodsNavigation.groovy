@@ -106,5 +106,29 @@ public class ReusableMethodsNavigation {
 		String postNavigationLoginText = WebUI.getText(findTestObject('Page_Arc dashboard/span_My Portfolios'))
 		WebUI.verifyMatch(postNavigationLoginText,'My Portfolios',false)
 	}
+	
+	@Keyword
+	public void navigateToBuildingTransit() {
+		WebUI.delay(3)
+		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/a_ Buildings'))
+		WebUI.delay(2)
+		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/a_ My Transit'))
+		//WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/i_fa fa-bars fa-lg'))
+
+		print "Making Slider On"
+		String postNavigationLoginText = WebUI.getText(findTestObject('Object Repository/Page_Arc dashboard/span_My Transit'))
+		WebUI.verifyMatch(postNavigationLoginText,'My Transit',true)
+		WebUI.delay(5)
+	}
+	
+	@Keyword
+	public void navigateToTransitDataInput(){
+		//WebUI.setViewPortSize(1500,800)
+		WebUI.delay(3)
+		/*WebUI.click(findTestObject('Object Repository/SubmitReview/clickOnSideBar'))
+		 WebUI.delay(2)*/
+		WebUI.click(findTestObject('Object Repository/DataInput/a_ Data Input'))
+
+	}
 }
 

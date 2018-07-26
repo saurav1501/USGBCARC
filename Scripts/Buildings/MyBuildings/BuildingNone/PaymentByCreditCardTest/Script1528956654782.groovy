@@ -20,9 +20,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+//Payment by Credit Card Test
+
+
 	try {	
 			CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram'(GlobalVariable.BuildingSheet, GlobalVariable.rowNumSix)
-			CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCC'(GlobalVariable.CCPayment , GlobalVariable.rowNumSix)
+			CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCC'(GlobalVariable.CCPayment , GlobalVariable.rowNumFour)
 	 
 	} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage())

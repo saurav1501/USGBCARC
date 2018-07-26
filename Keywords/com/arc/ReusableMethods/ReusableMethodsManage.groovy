@@ -101,15 +101,31 @@ public class ReusableMethodsManage extends BaseClass {
 
 
 	@Keyword
+	public editOccupanyAreaAndOpreatingHoursTransit(){
+		WebUI.delay(10)
+		WebUI.click(findTestObject('DataInput/CreateMeterBuilding/button_tippy_init dropdown-tog'))
+		WebUI.click(findTestObject('Object Repository/DataInput/CreateMeterBuilding/a_Building Settings'))
+		WebUI.delay(3)
+		WebUI.click(findTestObject('Object Repository/DataInput/CreateMeterBuilding/opreating_Hours'))
+		WebUI.scrollToElement(findTestObject('Object Repository/DataInput/CreateMeterBuilding/selectOpreatinghours'), 1)
+		WebUI.click(findTestObject('Object Repository/DataInput/CreateMeterBuilding/selectOpreatinghours'))
+		//WebUI.sendKeys(findTestObject('Object Repository/DataInput/CreateMeterBuilding/buildingOccupancy'), '2,000')
+		WebUI.clearText(findTestObject('Object Repository/DataInput/CreateMeterBuilding/buildingArea'))
+		WebUI.sendKeys(findTestObject('Object Repository/DataInput/CreateMeterBuilding/buildingArea'), '5000')
+		WebUI.click(findTestObject('Object Repository/DataInput/CreateMeterBuilding/updateBuildingSettingButton'))
+	}
+
+
+	@Keyword
 	public void verifyProjectDetails(String sheetName, int rowNum){
-		String prjName      = data.getCellData(sheetName,"ProjectName", rowNum)
-		String ownerCountry = data.getCellData(sheetName, "OwnerCountry", rowNum);
+		String prjName      = data.getCellData(sheetName,"Project Name", rowNum)
+		String ownerCountry = data.getCellData(sheetName, "Owner Country", rowNum);
 		String prjArea 		= data.getCellData(sheetName, "Area", rowNum);
 		String prjAddress 	= data.getCellData(sheetName, "Address", rowNum);
 		String prjCity 		= data.getCellData(sheetName, "City", rowNum);
 		String prjCountry 	= data.getCellData(sheetName, "Country", rowNum);
 		String prjState 	= data.getCellData(sheetName, "State", rowNum);
-		String prjId        = data.getCellData(sheetName,"ProjectID", rowNum)
+		String prjId        = data.getCellData(sheetName,"Project ID", rowNum)
 		String prjOprHrs      = data.getCellData(sheetName,"opr_hrs1", rowNum)
 		String prjOccupancy    = data.getCellData(sheetName,"occupancy", rowNum)
 
@@ -161,16 +177,15 @@ public class ReusableMethodsManage extends BaseClass {
 		Assert.assertEquals(regStatus, "Completed")
 
 		//Review Payment details verification
-/*
-		String revieDate= WebUI.getText(findTestObject('Object Repository/Manage/BillingSection/ReviewPaymentDate'))
-		String reviewOrderId= WebUI.getText(findTestObject('Object Repository/Manage/BillingSection/ReviewOrderId'))
-		String reviewAmount= WebUI.getText(findTestObject('Object Repository/Manage/BillingSection/ReviewAmount'))
-		String reviewStatus= WebUI.getText(findTestObject('Object Repository/Manage/BillingSection/ReviewPaymentStatus'))
-
-		String revieworderId = data.setCellData(sheetName, "ReviewId", rowNum,reviewOrderId)
-		Assert.assertEquals(revieDate, verifyBillingDate() )
-		//	Assert.assertEquals(reviewAmount, reviewAmt)
-		Assert.assertEquals(reviewStatus, "Completed")*/
+		/*
+		 String revieDate= WebUI.getText(findTestObject('Object Repository/Manage/BillingSection/ReviewPaymentDate'))
+		 String reviewOrderId= WebUI.getText(findTestObject('Object Repository/Manage/BillingSection/ReviewOrderId'))
+		 String reviewAmount= WebUI.getText(findTestObject('Object Repository/Manage/BillingSection/ReviewAmount'))
+		 String reviewStatus= WebUI.getText(findTestObject('Object Repository/Manage/BillingSection/ReviewPaymentStatus'))
+		 String revieworderId = data.setCellData(sheetName, "ReviewId", rowNum,reviewOrderId)
+		 Assert.assertEquals(revieDate, verifyBillingDate() )
+		 //	Assert.assertEquals(reviewAmount, reviewAmt)
+		 Assert.assertEquals(reviewStatus, "Completed")*/
 	}
 
 	@Keyword

@@ -2,6 +2,12 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+
+import org.testng.Assert
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
@@ -19,3 +25,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+
+
+try{
+
+CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram'(GlobalVariable.BuildingSheet, GlobalVariable.rowNumSix)
+
+CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsManage.billingStatus'(GlobalVariable.CCPayment, GlobalVariable.rowNumFour)
+
+} catch (Throwable t) {
+System.out.println(t.getLocalizedMessage())
+	Error e1 = new Error(t.getMessage())
+	e1.setStackTrace(t.getStackTrace())
+	e1.printStackTrace()
+}

@@ -4,25 +4,25 @@
    <name>AddNewProjectTest</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>0f514170-697d-4142-8469-f28a9c095992</testCaseGuid>
+   <testCaseGuid>8a051502-e4dc-48c5-ad0a-58a1093836a9</testCaseGuid>
    <variable>
       <defaultValue>'USBuildingNone'</defaultValue>
       <description></description>
-      <id>b6625df1-cb76-4f1f-8c98-e9abfef58ea1</id>
+      <id>10d45148-79dd-424a-bbf8-8fd69a7458fb</id>
       <masked>false</masked>
       <name>USBuildingNone</name>
    </variable>
    <variable>
       <defaultValue>'Buildings'</defaultValue>
       <description></description>
-      <id>e574d7e6-8422-4f8e-a7ff-54d658e3a0ae</id>
+      <id>f2928dc5-77d4-49b4-814c-10ec43b27457</id>
       <masked>false</masked>
       <name>ProjectType</name>
    </variable>
    <variable>
       <defaultValue>'None'</defaultValue>
       <description></description>
-      <id>3a51d934-b658-495d-b756-e13684d7dc2f</id>
+      <id>38a2fa2f-3482-45c8-aaa2-28b2b9b80c1e</id>
       <masked>false</masked>
       <name>RatingSystem</name>
    </variable>

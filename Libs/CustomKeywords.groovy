@@ -356,8 +356,52 @@ def static "com.arc.ReusableMethods.ReusableMethodsDataInput.uploadCreditFormTes
     (new com.arc.ReusableMethods.ReusableMethodsDataInput()).uploadCreditFormTest()
 }
 
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.fileUploadDataInput"() {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).fileUploadDataInput()
+}
+
 def static "com.arc.ReusableMethods.ReusableMethodsDataInput.clickCancel"() {
     (new com.arc.ReusableMethods.ReusableMethodsDataInput()).clickCancel()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createEnergyMeter"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createEnergyMeter(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createWaterMeter"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createWaterMeter(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createWasteMeter"() {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createWasteMeter()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.humanExperienceMeter"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).humanExperienceMeter(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.verifyAndDownloadExportData"() {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).verifyAndDownloadExportData()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.humanExperienceMeterTransitRidership"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).humanExperienceMeterTransitRidership(
+        	sheetName
+         , 	rowNum)
 }
 
 def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createEnergyMeterReading"(
@@ -440,6 +484,14 @@ def static "com.arc.ReusableMethods.ReusableMethodsAddNewProject.buildingAddNewP
          , 	rowNum)
 }
 
+def static "com.arc.ReusableMethods.ReusableMethodsAddNewProject.buildingTransitAddNewProject"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsAddNewProject()).buildingTransitAddNewProject(
+        	sheetName
+         , 	rowNum)
+}
+
 def static "com.arc.ReusableMethods.ReusableMethodsAddNewProject.addNewProjectCityORCom"(
     	String sheetName	
      , 	int rowNum	) {
@@ -504,6 +556,14 @@ def static "com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToPortfoli
     (new com.arc.ReusableMethods.ReusableMethodsNavigation()).navigateToPortfolio()
 }
 
+def static "com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToBuildingTransit"() {
+    (new com.arc.ReusableMethods.ReusableMethodsNavigation()).navigateToBuildingTransit()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToTransitDataInput"() {
+    (new com.arc.ReusableMethods.ReusableMethodsNavigation()).navigateToTransitDataInput()
+}
+
 def static "com.arc.ReusableMethods.ReusableMethodsSubmitReview.performanceScoreSelectionAndSummery"() {
     (new com.arc.ReusableMethods.ReusableMethodsSubmitReview()).performanceScoreSelectionAndSummery()
 }
@@ -534,6 +594,14 @@ def static "com.arc.ReusableMethods.ReusableMethodsSubmitReview.submitCertificat
 
 def static "com.arc.ReusableMethods.ReusableMethodsSubmitReview.submitPreCertAndVerifySuccessMessage"() {
     (new com.arc.ReusableMethods.ReusableMethodsSubmitReview()).submitPreCertAndVerifySuccessMessage()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.preRequisiteAttemptTransit"() {
+    (new com.arc.ReusableMethods.ReusableMethodsBasePoint()).preRequisiteAttemptTransit()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.basePointAttemptTransit"() {
+    (new com.arc.ReusableMethods.ReusableMethodsBasePoint()).basePointAttemptTransit()
 }
 
 def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.basePointOptionA"(
@@ -574,6 +642,10 @@ def static "com.arc.ReusableMethods.ReusableMethodsManage.verifyBillingDate"() {
 
 def static "com.arc.ReusableMethods.ReusableMethodsManage.editOccupanyAreaAndOpreatingHours"() {
     (new com.arc.ReusableMethods.ReusableMethodsManage()).editOccupanyAreaAndOpreatingHours()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsManage.editOccupanyAreaAndOpreatingHoursTransit"() {
+    (new com.arc.ReusableMethods.ReusableMethodsManage()).editOccupanyAreaAndOpreatingHoursTransit()
 }
 
 def static "com.arc.ReusableMethods.ReusableMethodsManage.verifyProjectDetails"(

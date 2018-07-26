@@ -14,8 +14,6 @@ public class ReusableMethodsAddNewProject extends BaseClass{
 	@Keyword
 	public void buildingAddNewProject(String sheetName , int rowNum) {
 		/**************Reading data form excel sheet*************************/
-		String projName1 = data.getCellData(sheetName, "Project Name", rowNum)
-		println projName1
 		String prjName      = data.getCellData(sheetName,"Project Name", rowNum)
 		String prjType 		= data.getCellData(sheetName, "Project Type", rowNum);
 		String prjRating 	= data.getCellData(sheetName, "Rating System", rowNum);
@@ -31,7 +29,10 @@ public class ReusableMethodsAddNewProject extends BaseClass{
 		String prjState 	= data.getCellData(sheetName, "State", rowNum);
 		String prjZip 		= data.getCellData(sheetName, "Zip", rowNum);
 
-		String ProjectName = prjName +prjRating +formatarDate.format(date)
+		
+		String proName= prjName.substring(0, 9)
+		String ProjectName = proName +prjRating +formatarDate.format(date)
+		data.setCellData(sheetName,"Project Name", rowNum, ProjectName)
 		navigation.clickAddProject()
 
 		WebUI.setText(findTestObject('Object Repository/Add_Project_Details/input_name'), ProjectName)
@@ -55,14 +56,78 @@ public class ReusableMethodsAddNewProject extends BaseClass{
 		WebUI.click(findTestObject('Add_Project_Details/input_reg_agreement'))
 		WebUI.click(findTestObject('Add_Project_Details/button_Next'))
 		WebUI.delay(5)
-		String PaymentPageText = WebUI.getText(findTestObject('Object Repository/Add_Project_Details/strong_Promotional Code'))
-		WebUI.verifyMatch(PaymentPageText,'Promotional Code',true)
+		//String PaymentPageText = WebUI.getText(findTestObject('Add_Project_Details/VerifyPaymentPage_ text'))
+		String PaymentPageText = WebUI.getText(findTestObject('Object Repository/Add_Project_Details/ProjectDetailsAssertionText'))
+		WebUI.verifyMatch(PaymentPageText,'Project Details',true)
 		String Project_ID = WebUI.getText(findTestObject('Object Repository/Add_Project_Details/td_BuildingID'))
 		System.out.println(Project_ID)
 		data.setCellData(sheetName,"Project ID", rowNum, Project_ID)
 		WebUI.delay(5)
 	}
+	
+	
+	
+	@Keyword
+	public void buildingTransitAddNewProject(String sheetName , int rowNum) {
+		/**************Reading data form excel sheet*************************/
+		String prjName          = data.getCellData(sheetName,"Project Name", rowNum)
+		String prjType 		    = data.getCellData(sheetName, "Project Type", rowNum);
+		String prjRating    	= data.getCellData(sheetName, "Rating System", rowNum);
+		String spaceType        = data.getCellData(sheetName, "Space Type", rowNum);
+		String annualRider      = data.getCellData(sheetName, "annual_ridership", rowNum);
+		String weekOprhrs       = data.getCellData(sheetName, "week_opr_hrs", rowNum);
+		String fullTimeStaff    = data.getCellData(sheetName, "fulltime_staff", rowNum);
+		String avgtimeSpent     = data.getCellData(sheetName, "avg_time_spent", rowNum);
+		String ownerOrg 	    = data.getCellData(sheetName, "OwnerOrganization", rowNum);
+		String ownerType 	    = data.getCellData(sheetName, "OwnerType", rowNum);
+		String ownerCountry     = data.getCellData(sheetName, "OwnerCountry", rowNum);
+		String ownerMail 	    = data.getCellData(sheetName, "OwnerEmail", rowNum);
+		String prjArea 		    = data.getCellData(sheetName, "Area", rowNum);
+		String prjAddress 	    = data.getCellData(sheetName, "Address", rowNum);
+		String prjCity 		    = data.getCellData(sheetName, "City", rowNum);
+		String prjCountry 	    = data.getCellData(sheetName, "Country", rowNum);
+		String prjState 	    = data.getCellData(sheetName, "State", rowNum);
+		String prjZip 		    = data.getCellData(sheetName, "Zip", rowNum);
+		String isStation 		= data.getCellData(sheetName, "is_station", rowNum);
 
+
+		String proName= prjName.substring(0, 9)
+		String ProjectName = proName +prjRating +formatarDate.format(date)
+		data.setCellData(sheetName,"Project Name", rowNum, ProjectName)
+		navigation.clickAddProject()
+		WebUI.setText(findTestObject('Add_Project_Details/AddProjectBuildingTransit/input_name'), ProjectName)
+		WebUI.selectOptionByLabel(findTestObject('Add_Project_Details/AddProjectBuildingTransit/select_Select space typeAirpor'),spaceType, false)
+		WebUI.selectOptionByLabel(findTestObject('Add_Project_Details/AddProjectBuildingTransit/select_SelectUndergroundAbove'),isStation, false)
+		WebUI.setText(findTestObject('Add_Project_Details/AddProjectBuildingTransit/input_annual_ridership'), annualRider)
+		WebUI.setText(findTestObject('Add_Project_Details/AddProjectBuildingTransit/input_operatingHours'), weekOprhrs)
+		WebUI.setText(findTestObject('Add_Project_Details/AddProjectBuildingTransit/input_full_time_staff'), fullTimeStaff)
+		WebUI.setText(findTestObject('Add_Project_Details/AddProjectBuildingTransit/input_time_spent_by_riders'), weekOprhrs)
+		WebUI.selectOptionByLabel(findTestObject('Add_Project_Details/AddProjectBuildingTransit/select_Select Owner TypeBusine'),ownerType, false)
+		WebUI.setText(findTestObject('Object Repository/Add_Project_Details/input_organization'),ownerOrg)
+		WebUI.click(findTestObject('Object Repository/Add_Project_Details/input_organization'))
+		WebUI.delay(2)
+		WebUI.click(findTestObject('Add_Project_Details/span_Habitat for Humanity'))
+		WebUI.setText(findTestObject('Add_Project_Details/AddProjectBuildingTransit/input_owner_email'), ownerMail)
+		WebUI.setText(findTestObject('Add_Project_Details/AddProjectBuildingTransit/input_gross_area'), prjArea)
+		WebUI.setText(findTestObject('Add_Project_Details/AddProjectBuildingTransit/input_street'), prjAddress)
+		WebUI.setText(findTestObject('Add_Project_Details/AddProjectBuildingTransit/input_city'), prjCity)
+		WebUI.selectOptionByLabel(findTestObject('Add_Project_Details/country'), prjCountry, false)
+		WebUI.selectOptionByLabel(findTestObject('Add_Project_Details/state'), prjState, false)
+		WebUI.setText(findTestObject('Add_Project_Details/AddProjectBuildingTransit/input_zip_code'), prjZip)
+		WebUI.click(findTestObject('Add_Project_Details/AddProjectBuildingTransit/input_reg_agreement'))
+		WebUI.delay(2)
+		WebUI.doubleClick(findTestObject('Add_Project_Details/button_Next'))
+		WebUI.delay(8)
+		String PaymentPageText = WebUI.getText(findTestObject('Object Repository/Add_Project_Details/ProjectDetailsAssertionText'))
+		WebUI.verifyMatch(PaymentPageText,'Project Details',true)
+		String Project_ID = WebUI.getText(findTestObject('Object Repository/Add_Project_Details/td_BuildingID'))
+		System.out.println(Project_ID)
+		data.setCellData(sheetName,"Project ID", rowNum, Project_ID)
+		WebUI.delay(5)
+	}
+	
+	
+	
 	@Keyword
 	public void addNewProjectCityORCom(String sheetName , int rowNum) {
 		/**************Reading data form excel sheet*************************/
